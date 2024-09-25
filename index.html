@@ -2,6 +2,15 @@
 // PHP file (redirect.php)
 
 // Redirect to the external site
-header("Location: https://stormsecure.my.canva.site/");
+$MYWEBSITE = header("Location: https://stormsecure.my.canva.site/");
 exit();
 ?>
+
+
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+  <?php echo $MYWEBSITE?>
+</body>
+</html>
