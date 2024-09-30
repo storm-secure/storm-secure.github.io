@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <title>Redirecting...</title>
     <style>
-        /* Hide the footer immediately */
-        footer {
+        /* Hide the footer using the specific Canva footer class */
+        .canva-footer-class {
             display: none;
         }
     </style>
     <script type="text/javascript">
-        // Redirect after 2 seconds to ensure footer is hidden
+        // Redirect after 2 seconds
         setTimeout(function() {
             window.location.href = "https://stormsecure.my.canva.site/";
-        }, 2000); // 2-second delay before redirect
+        }, 2000);
     </script>
 </head>
 <body>
     <h1>Redirecting to the new site...</h1>
     <p>If you are not redirected automatically, follow this <a href="https://stormsecure.my.canva.site/">link to the site</a>.</p>
 
-    <!-- Example footer element that will be hidden -->
-    <footer>
+    <!-- Example Canva footer element that will be hidden -->
+    <div class="canva-footer-class">
         <p>This is the footer that will be hidden before redirection.</p>
-    </footer>
+    </div>
 </body>
 </html>
