@@ -2,36 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
     <style>
-        /* Optionally, pre-hide footer if you know the class or ID */
-        footer, [class*="footer"], [id*="footer"] {
+        /* Pre-hide footer elements */
+        footer, [class*="footer"], [id*="footer"], div[role="contentinfo"] {
             display: none !important;
         }
     </style>
     <script type="text/javascript">
-        // Hide the footer by targeting common footer elements
         window.onload = function() {
-            // Select all elements that might resemble a footer
+            // Select all footer-related elements
             const footerElements = document.querySelectorAll('footer, [class*="footer"], [id*="footer"], div[role="contentinfo"]');
 
-            // Loop through each found footer element and hide it
+            // Hide each found footer element
             footerElements.forEach(function(el) {
                 el.style.display = 'none';
             });
 
-            // Redirect after 2 seconds
+            // Set a flag in localStorage to indicate the redirect happened
+            localStorage.setItem('footerHidden', 'true');
+
+            // Redirect to the Canva site after 2 seconds
             setTimeout(function() {
                 window.location.href = "https://stormsecure.my.canva.site/";
             }, 2000);
-        }
+        };
     </script>
 </head>
 <body>
     <h1>Redirecting to the new site...</h1>
     <p>If you are not redirected automatically, follow this <a href="https://stormsecure.my.canva.site/">link to the site</a>.</p>
 
-    <!-- Sample footer for GitHub pages (which will be hidden) -->
+    <!-- Sample footer for demonstration -->
     <footer>
         <p>This is a sample footer that will be hidden before redirect.</p>
     </footer>
