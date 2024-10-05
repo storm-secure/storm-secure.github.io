@@ -5,25 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirecting...</title>
     <style>
-        /* Pre-hide footer elements */
+
         footer, [class*="footer"], [id*="footer"], div[role="contentinfo"] {
             display: none !important;
         }
     </style>
     <script type="text/javascript">
         window.onload = function() {
-            // Select all footer-related elements
             const footerElements = document.querySelectorAll('footer, [class*="footer"], [id*="footer"], div[role="contentinfo"]');
 
-            // Hide each found footer element
             footerElements.forEach(function(el) {
                 el.style.display = 'none';
             });
 
-            // Set a flag in localStorage to indicate the redirect happened
             localStorage.setItem('footerHidden', 'true');
 
-            // Redirect to the Canva site after 2 seconds
             setTimeout(function() {
                 window.location.href = "https://stormsecure.my.canva.site/";
             }, 2000);
@@ -34,7 +30,6 @@
     <h1>Redirecting to the new site...</h1>
     <p>If you are not redirected automatically, follow this <a href="https://stormsecure.my.canva.site/">link to the site</a>.</p>
 
-    <!-- Sample footer for demonstration -->
     <footer>
         <p>This is a sample footer that will be hidden before redirect.</p>
     </footer>
