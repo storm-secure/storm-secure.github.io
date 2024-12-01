@@ -3,35 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
-    <style>
-
-        footer, [class*="footer"], [id*="footer"], div[role="contentinfo"] {
-            display: none !important;
-        }
-    </style>
-    <script type="text/javascript">
-        window.onload = function() {
-            const footerElements = document.querySelectorAll('footer, [class*="footer"], [id*="footer"], div[role="contentinfo"]');
-
-            footerElements.forEach(function(el) {
-                el.style.display = 'none';
-            });
-
-            localStorage.setItem('footerHidden', 'true');
-
-            setTimeout(function() {
-                window.location.href = "https://stormsecure.my.canva.site/";
-            }, 2000);
-        };
-    </script>
+    <title>Tech Consultancy</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Redirecting to the new site...</h1>
-    <p>If you are not redirected automatically, follow this <a href="https://stormsecure.my.canva.site/">link to the site</a>.</p>
+    <!-- Header Section -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to <span>Tech Solutions</span></h1>
+            <p>Your Partner in Digital Transformation</p>
+            <button onclick="scrollToSection('services')">Explore Services</button>
+        </div>
+    </header>
 
-    <footer>
-        <p>This is a sample footer that will be hidden before redirect.</p>
+    <!-- Services Section -->
+    <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <img src="assets/service1.png" alt="Service 1">
+                <h3>Cloud Solutions</h3>
+                <p>Modernize your IT with scalable cloud infrastructure.</p>
+            </div>
+            <div class="service-card">
+                <img src="assets/service2.png" alt="Service 2">
+                <h3>Cybersecurity</h3>
+                <p>Protect your business from evolving threats.</p>
+            </div>
+            <div class="service-card">
+                <img src="assets/service3.png" alt="Service 3">
+                <h3>Data Analytics</h3>
+                <p>Unlock insights with advanced data analytics.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <p id="formResponse"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Tech Solutions. All Rights Reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
