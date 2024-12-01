@@ -7,14 +7,14 @@ body, h1, h2, p, input, textarea, button {
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f7f8fa;
+    color: #000000; /* Black */
+    background-color: #FFFFFF; /* White */
 }
 
 /* Hero Section */
 .hero-section {
-    background-color: #1d3557; /* Dark Blue */
-    color: #f1faee; /* Light Cream */
+    background-color: #333333; /* Dark Gray */
+    color: #FFFFFF; /* White */
     text-align: center;
     padding: 100px 20px;
 }
@@ -23,7 +23,7 @@ body {
     font-weight: bold;
 }
 .hero-section h1 span {
-    color: #e63946; /* Red Highlight */
+    color: #FFD700; /* Yellow */
 }
 .hero-content p {
     font-size: 1.2rem;
@@ -33,27 +33,26 @@ body {
     margin-top: 20px;
     padding: 10px 20px;
     font-size: 16px;
-    color: #1d3557; /* Dark Blue */
-    background: #f1faee; /* Light Cream */
+    color: #FFFFFF; /* White */
+    background: #007BFF; /* Blue */
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 .hero-content button:hover {
-    background-color: #e63946; /* Red */
-    color: #fff;
+    background-color: #0056b3; /* Darker Blue */
 }
 
 /* Services Section */
 .services-section {
     padding: 50px 20px;
     text-align: center;
-    background-color: #f7f8fa; /* Light Gray */
+    background-color: #F5F5F5; /* Light Gray */
 }
 .services-section h2 {
     margin-bottom: 20px;
     font-size: 28px;
-    color: #1d3557; /* Dark Blue */
+    color: #333333; /* Dark Gray */
 }
 .services-container {
     display: flex;
@@ -62,13 +61,13 @@ body {
     justify-content: center;
 }
 .service-card {
-    background: #fff;
+    background: #FFFFFF; /* White */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 300px;
     transition: transform 0.3s, box-shadow 0.3s;
-    border: 2px solid #e63946; /* Subtle border */
+    border: 1px solid #CCCCCC; /* Subtle border */
 }
 .service-card:hover {
     transform: translateY(-10px);
@@ -80,14 +79,14 @@ body {
 }
 .service-card h3 {
     margin: 15px 0;
-    color: #1d3557; /* Dark Blue */
+    color: #333333; /* Dark Gray */
 }
 
 /* Contact Section */
 .contact-section {
     padding: 50px 20px;
-    background: #1d3557; /* Dark Blue */
-    color: #f1faee; /* Light Cream */
+    background: #FFFFFF; /* White */
+    color: #333333; /* Dark Gray */
     text-align: center;
 }
 .contact-section h2 {
@@ -101,23 +100,22 @@ body {
     width: 100%;
     margin-bottom: 10px;
     padding: 10px;
-    border: 1px solid #f1faee; /* Cream */
+    border: 1px solid #CCCCCC; /* Light Gray */
     border-radius: 5px;
 }
 .contact-section button {
-    background: #e63946; /* Red */
-    color: #f1faee; /* Light Cream */
+    background: #007BFF; /* Blue */
+    color: #FFFFFF; /* White */
     cursor: pointer;
 }
 .contact-section button:hover {
-    background: #f1faee; /* Cream */
-    color: #1d3557; /* Dark Blue */
+    background: #0056b3; /* Darker Blue */
 }
 
 /* Footer */
 .footer {
     text-align: center;
     padding: 20px;
-    background: #1d3557; /* Dark Blue */
-    color: #f1faee; /* Light Cream */
+    background: #333333; /* Dark Gray */
+    color: #FFFFFF; /* White */
 }
