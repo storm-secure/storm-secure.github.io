@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, button, label, a {
     color: inherit;
 }
 
-/* Header Section */
+/* Header Styles */
 header {
     text-align: center;
     padding: 50px 20px;
@@ -42,6 +42,7 @@ header p {
 /* About Section */
 .about-section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 60px 20px;
@@ -88,6 +89,7 @@ header p {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .service-card {
@@ -227,22 +229,18 @@ footer a:hover {
 }
 
 /* Responsive Design */
-@media screen and (max-width: 768px) {
-    .about-section,
-    .services-section {
-        flex-direction: column;
-        text-align: center;
+@media screen and (max-width: 1024px) {
+    header h1 {
+        font-size: 3rem;
     }
 
-    .about-section img,
-    .services-section img {
+    .about-section img {
         max-width: 100%;
         margin-left: 0;
         margin-bottom: 20px;
     }
 
-    .about-section div,
-    .services-section div {
+    .about-section div {
         max-width: 100%;
     }
 
@@ -253,5 +251,102 @@ footer a:hover {
     .service-card {
         width: 100%;
         margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 30px 20px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-section img {
+        max-width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-section div {
+        max-width: 100%;
+    }
+
+    .service-card-container {
+        flex-direction: column;
+    }
+
+    .service-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-section {
+        padding: 40px 20px;
+    }
+
+    .contact-content h2 {
+        font-size: 2rem;
+    }
+
+    .contact-content p {
+        font-size: 1rem;
+    }
+
+    .contact-form .form-group {
+        margin-bottom: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px;
+    }
+
+    .contact-form .submit-btn {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    .about-section h2 {
+        font-size: 2rem;
+    }
+
+    .service-card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 0.9rem;
+    }
+
+    footer p {
+        font-size: 0.9rem;
     }
 }
