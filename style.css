@@ -1,20 +1,18 @@
 /* General Styles */
+@import url('https://db.onlinewebfonts.com/c/77f3199fd1c04152bc99d1663a7c7c31?family=Technovier+Bold');
+
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Technovier Bold', sans-serif;
     color: white;
     background: linear-gradient(135deg, #1f0330, #330355);
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-}
-
-p {
-    line-height: 1.6;
-    margin: 0;
+h1, h2, h3, h4, h5, h6, p, input, textarea, button, label, a {
+    font-family: 'Technovier Bold', sans-serif;
+    color: inherit;
 }
 
 /* Header Section */
