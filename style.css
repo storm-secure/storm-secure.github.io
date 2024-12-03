@@ -1,120 +1,217 @@
-/* General Styling */
-body {
+/* General Reset */
+* {
     margin: 0;
-    font-family: 'Technovier Bold', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Header */
+/* Body and Overall Styling */
+body {
+    font-family: 'Technovier Bold', Arial, sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+    line-height: 1.6;
+    padding: 0 10px;
+}
+
+/* Header Section */
 header {
     text-align: center;
-    background-color: #1a1a1a;
-    color: white;
+    background-color: #333;
+    color: #f7f7f7;
     padding: 20px;
+}
+
+header img {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 10px 0;
+}
+
+header p {
+    font-size: 1.2em;
 }
 
 /* About Section */
 .about-section {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    padding: 20px;
-    background-color: #ffffff;
+    justify-content: space-between;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #333;
+}
+
+.about-section div {
+    max-width: 600px;
+}
+
+.about-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
     color: #333;
 }
 
+.about-section p {
+    font-size: 1.2em;
+    color: #555;
+}
+
 .about-section img {
-    width: 300px;
-    border-radius: 10px;
+    max-width: 300px;
+    border-radius: 8px;
 }
 
 /* Services Section */
 .services-section {
+    background-color: #f7f7f7;
+    padding: 40px 20px;
     text-align: center;
-    background-color: #f8f9fa;
-    padding: 20px;
+}
+
+.services-section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 .service-card-container {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .service-card {
-    width: 300px;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 300px;
     text-align: center;
 }
 
 .service-card img {
-    width: 100%;
-    border-radius: 10px;
+    max-width: 100%;
+    border-bottom: 2px solid #333;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.service-card h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #555;
 }
 
 /* Contact Section */
 .contact-section {
-    background-color: #1a1a1a;
-    color: white;
-    padding: 20px;
+    background-color: #fff;
+    padding: 40px 20px;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+}
+
+.contact-content h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
     text-align: center;
 }
 
+.contact-content p {
+    text-align: center;
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
 .contact-form {
-    margin: auto;
-    width: 50%;
-    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .contact-form .form-group {
     margin-bottom: 15px;
 }
 
+.contact-form label {
+    font-size: 1.2em;
+    display: block;
+    color: #333;
+    margin-bottom: 5px;
+}
+
 .contact-form input, .contact-form textarea {
     width: 100%;
     padding: 10px;
+    font-size: 1em;
+    border: 2px solid #333;
     border-radius: 5px;
-    border: 1px solid #ccc;
-    font-family: Arial;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: #f7f7f7;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contact-form button:hover {
+    background-color: #555;
 }
 
 /* Social Media Section */
 .social-media-section {
-    background-color: #f0f0f0;
+    background-color: #f7f7f7;
+    padding: 40px 20px;
     text-align: center;
-    padding: 20px;
+    border-top: 2px solid #333;
+}
+
+.social-media-section h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 .social-media-links {
     display: flex;
     justify-content: center;
     gap: 15px;
+    margin-top: 10px;
 }
 
-.social-icon {
+.social-media-links a {
+    font-size: 1.5em;
     color: #333;
     text-decoration: none;
-    font-size: 18px;
-    padding: 10px 20px;
     border: 2px solid #333;
+    padding: 10px 15px;
     border-radius: 5px;
-    transition: 0.3s;
 }
 
-.social-icon:hover {
+.social-media-links a:hover {
     background-color: #333;
-    color: #f0f0f0;
+    color: #f7f7f7;
 }
 
-/* Footer */
+/* Footer Section */
 footer {
+    background-color: #333;
+    color: #f7f7f7;
     text-align: center;
     padding: 10px;
-    background-color: #1a1a1a;
-    color: white;
 }
