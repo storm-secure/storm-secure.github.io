@@ -102,7 +102,7 @@ header p {
 }
 
 .service-card img {
-    width: 100%;
+    width: fit-content;
     height: auto;
     border-radius: 8px;
     margin-bottom: 15px;
