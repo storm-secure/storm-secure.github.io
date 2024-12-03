@@ -4,15 +4,15 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #e6f7ff; /* Light blue */
-    color: #003366; /* Dark blue */
+    background-color: #e6f7ff; /* Light blue background */
+    color: #003366; /* Dark blue text color */
 }
 
 /* Header */
 header {
     text-align: center;
     padding: 2em;
-    background-color: #003366; /* Dark blue */
+    background-color: #003366; /* Dark blue background */
     color: #ffffff; /* White text */
 }
 
@@ -37,7 +37,7 @@ header p {
     align-items: center;
     justify-content: center;
     padding: 2em;
-    background-color: #ffffff; /* White */
+    background-color: #ffffff; /* White background */
 }
 
 .about-section div {
@@ -47,7 +47,7 @@ header p {
 
 .about-section h2 {
     font-size: 2em;
-    color: #003366; /* Dark blue */
+    color: #003366;
 }
 
 .about-section img {
@@ -65,7 +65,7 @@ header p {
 
 .services-section h2 {
     font-size: 2.5em;
-    color: #003366; /* Dark blue */
+    color: #003366;
     margin-bottom: 1em;
 }
 
@@ -77,8 +77,8 @@ header p {
 }
 
 .service-card {
-    background: #ffffff; /* White */
-    border: 1px solid #cccccc; /* Light gray */
+    background: #ffffff; /* White background */
+    border: 1px solid #cccccc; /* Light gray border */
     padding: 1em;
     border-radius: 8px;
     max-width: 300px;
@@ -93,29 +93,29 @@ header p {
 }
 
 .service-card h3 {
-    color: #003366; /* Dark blue */
+    color: #003366;
     margin-bottom: 0.5em;
 }
 
 .service-card p {
-    color: #555555; /* Subtle gray */
+    color: #555555; /* Subtle gray for text */
 }
 
 /* Contact Section */
 .contact-section {
     text-align: center;
     padding: 2em;
-    background-color: #ffffff; /* White */
+    background-color: #ffffff; /* White background */
 }
 
 .contact-section h2 {
     font-size: 2.5em;
-    color: #003366; /* Dark blue */
+    color: #003366;
     margin-bottom: 1em;
 }
 
 .contact-section p {
-    color: #555555; /* Subtle gray */
+    color: #555555; /* Subtle gray text */
     margin-bottom: 1.5em;
 }
 
@@ -133,19 +133,19 @@ header p {
     display: block;
     font-weight: bold;
     margin-bottom: 0.5em;
-    color: #003366; /* Dark blue */
+    color: #003366;
 }
 
 .contact-form input, .contact-form textarea {
     width: 100%;
     padding: 0.5em;
-    border: 1px solid #cccccc; /* Light gray */
+    border: 1px solid #cccccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
 
 .contact-form button {
-    background-color: #003366; /* Dark blue */
+    background-color: #003366;
     color: white;
     border: none;
     padding: 0.7em 1.5em;
@@ -155,46 +155,13 @@ header p {
 }
 
 .contact-form button:hover {
-    background-color: #00509e; /* Hover blue */
-}
-
-/* Social Media Section */
-.social-media-section {
-    background-color: #f2f9ff; /* Very light blue */
-    padding: 2em;
-    text-align: center;
-}
-
-.social-media-section h2 {
-    font-size: 2.5em;
-    color: #003366; /* Dark blue */
-}
-
-.social-media-links {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    flex-wrap: wrap;
-}
-
-.social-media-links a {
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #003366; /* Dark blue */
-    padding: 0.5em 1em;
-    border-radius: 4px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.social-media-links a:hover {
-    background-color: #00509e; /* Hover blue */
+    background-color: #00509e; /* Lighter blue for hover effect */
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 1em;
-    background-color: #003366; /* Dark blue */
+    background-color: #003366; /* Dark blue background */
     color: white;
 }
