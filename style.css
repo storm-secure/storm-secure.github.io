@@ -170,7 +170,7 @@ header p {
 
 .contact-form input,
 .contact-form textarea {
-    width: 100%;
+    width: -webkit-fill-available;
     padding: 12px;
     border: 1px solid #aaa;
     border-radius: 8px;
