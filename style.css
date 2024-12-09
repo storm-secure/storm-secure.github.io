@@ -228,6 +228,42 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Ads Section */
+.ads-section {
+    padding: 40px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #1f0330, #330355);
+    color: white;
+}
+
+.ads-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.ads-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.show-ads-btn {
+    background: #6a00ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.show-ads-btn:hover {
+    background: #8b00ff;
+}
+
+
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
     header h1 {
