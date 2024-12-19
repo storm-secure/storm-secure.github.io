@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /private/
 Allow: /
-Sitemap: https://storm-secure.github.io/sitemap.xml
+Sitemap: https://stormsecure.co.za/sitemap.xml
