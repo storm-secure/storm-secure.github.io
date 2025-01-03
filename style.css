@@ -230,6 +230,8 @@ footer a:hover {
 
 /* Ads Section */
 .ads-section {
+    margin: 0 auto;
+    max-width: 100%;
     padding: 40px 20px;
     text-align: center;
     background: linear-gradient(135deg, #1f0330, #330355);
@@ -301,6 +303,9 @@ footer a:hover {
 
     header p {
         font-size: 1rem;
+    }
+    .ads-container {
+        width: 728px; /* Example: For larger screens */
     }
 
     .about-section {
