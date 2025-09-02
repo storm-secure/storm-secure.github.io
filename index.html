@@ -41,6 +41,23 @@
     <link href="https://db.onlinewebfonts.com/c/77f3199fd1c04152bc99d1663a7c7c31?family=Technovier+Bold" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
+    <style>
+      /* Background Video Setup */
+      .video-background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 100%;
+        min-height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        pointer-events: none;
+      }
+      .mirror-horizontal { transform: scaleX(-1); }
+      .mirror-vertical { transform: scaleY(-1); }
+      .mirror-both { transform: scale(-1, -1); }
+    </style>
+
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
@@ -81,6 +98,13 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T96NDVD7"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Background Video -->
+    <video class="video-background" autoplay muted loop playsinline>
+      <source src="/assets/background.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
     <header>
         <img src="assets/logo_test.jpg" alt="Storm Secure Logo">
         <h1>Storm_Secure</h1>
@@ -146,8 +170,6 @@
         </div>
     </section>
 
-
-
     <!-- Contact Section -->
     <section class="contact-section">
         <div class="contact-content">
@@ -171,28 +193,25 @@
         </div>
     </section>
 
-      <!-- support us---->
-
-<section class="ads-section">
-    <h2>Support Us</h2>
-    <p>Your support helps keep our services running. Ads displayed here contribute to maintaining our operations.</p>
-    <div class="ads-container" style="margin-top: 20px; text-align: center;">
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5057761895144912"
-     crossorigin="anonymous"></script>
-    <!-- warra -->
-    <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-5057761895144912"
-         data-ad-slot="6068277026"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-    </div>
-</section>
-
-
+    <!-- support us -->
+    <section class="ads-section">
+        <h2>Support Us</h2>
+        <p>Your support helps keep our services running. Ads displayed here contribute to maintaining our operations.</p>
+        <div class="ads-container" style="margin-top: 20px; text-align: center;">
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5057761895144912"
+         crossorigin="anonymous"></script>
+        <!-- warra -->
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-5057761895144912"
+             data-ad-slot="6068277026"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer>
@@ -228,13 +247,11 @@
 
     <script>
     // Show Ads on Button Click
-    document.querySelector('.show-ads-btn').addEventListener('click', function () {
+    document.querySelector('.show-ads-btn')?.addEventListener('click', function () {
         const adsContainer = document.querySelector('.ads-container');
         adsContainer.style.display = 'block';
-        this.style.display = 'none'; // Hide the button after displaying the ad
+        this.style.display = 'none';
     });
     </script>
-
-
 </body>
 </html>
