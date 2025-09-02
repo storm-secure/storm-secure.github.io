@@ -56,6 +56,48 @@
       .mirror-horizontal { transform: scaleX(-1); }
       .mirror-vertical { transform: scaleY(-1); }
       .mirror-both { transform: scale(-1, -1); }
+
+      /* Make text readable over video */
+      header, section, footer {
+        background: rgba(0, 0, 0, 0.55);
+        border-radius: 10px;
+        margin: 20px;
+        padding: 20px;
+        color: #fff;
+      }
+
+      header h1, header p {
+        text-align: center;
+        margin: 10px 0;
+      }
+
+      h2, h3 {
+        color: #fff;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .service-card-container, .area-card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+
+      .service-card, .area-card {
+        flex: 1 1 calc(50% - 20px);
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+        padding: 15px;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 0.9em;
+      }
     </style>
 
     <!-- Structured Data -->
@@ -101,7 +143,7 @@
 
     <!-- Background Video -->
     <video class="video-background" autoplay muted loop playsinline>
-      <source src="assets/Media1.mp4" type="video/mp4">
+      <source src="/assets/background.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
 
@@ -143,11 +185,12 @@
             <div class="service-card">
                 <img src="assets/service4.jpg" alt="Web Development">
                 <h3>Web Development</h3>
-                <p>let's get your company name out there. let us create your customized website to the world<br><br>With free hosting, we are able to get you up and running fast.</p>
+                <p>Let's get your company name out there. Let us create your customized website for the world.<br><br>With free hosting, we are able to get you up and running fast.</p>
             </div>
-
         </div>
-      <!-- Areas of Service Section -->
+    </section>
+
+    <!-- Areas of Service Section -->
     <section class="areas-of-service-section">
         <h2>Areas of Service</h2>
         <div class="area-card-container">
@@ -193,7 +236,7 @@
         </div>
     </section>
 
-    <!-- support us -->
+    <!-- Support Us Section -->
     <section class="ads-section">
         <h2>Support Us</h2>
         <p>Your support helps keep our services running. Ads displayed here contribute to maintaining our operations.</p>
